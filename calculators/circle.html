@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculators.css">
+    <script type="text/javascript" src="../time.js"></script>
+    <script type="text/javascript" src="circle.js"></script>
+</head>
+<body>
+    <div class="nav"><a href="../index.html" id="title">MATHS FANS</a></div>
+    <div class="background"><div id="time"></div></div>
+    <div class="body">
+        <div class="box">
+            <h1>圆计算器</h1>
+            <form>
+                <ul>
+                    <li>面积:<input type="text" id="A" onkeypress="clearInput(A)"></li>
+                    <li>周长:<input type="text" id="C" onkeypress="clearInput(C)"></li>
+                    <li>直径:<input type="text" id="d" onkeypress="clearInput(d)"></li>
+                    <li>半径:<input type="text" id="r" onkeypress="clearInput(r)"></li>
+                </ul>
+                <div class="button"><input type="button" value="计算" onclick="show()"><input type="button" value="清除" onclick="clearInput(),clearAnswer()" ></div>
+            </form>
+            <div id="answer"></div>
+        </div>
+    </div>
+</body>
+</html>

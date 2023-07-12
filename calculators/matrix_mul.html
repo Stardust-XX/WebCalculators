@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculators.css">
+    <script type="text/javascript" src="../time.js"></script>
+    <script type="text/javascript" src="matrix_mul.js"></script>
+    <style>
+        input{
+            text-align: center;
+        }
+        h1{
+            flex: 1;
+        }
+        form{
+            flex: 3;
+        }
+        .result{
+            flex: 3;
+        }
+        .submit {
+            display: flex;
+            justify-content: space-around;
+        }
+        .submit input{
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .mat{
+            display: flex;
+        }
+        .mat1{
+            margin: 10px 10px;
+        }
+        .mat2{
+            margin: 10px 10px;
+        }
+        form span input{
+            height: 60px;
+            width: 60px;
+        }
+        .result input{
+            height: 60px;
+            width: 60px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="nav"><a href="../index.html" id="title">MATHS FANS</a></div>
+<div class="background"><div id="time"></div></div>
+<div class="body">
+    <div class="box">
+        <h1>矩阵的乘法</h1>
+        <form>
+            <div class="mat">
+                <div class="mat1">
+                    <div>
+                        <span><input type="text" id="a11"></span>
+                        <span><input type="text" id="a12"></span>
+                    </div>
+                    <div>
+                        <span><input type="text" id="a21"></span>
+                        <span><input type="text" id="a22"></span>
+                    </div>
+                </div>
+                <div class="mat2">
+                    <div>
+                        <span><input type="text" id="b11"></span>
+                        <span><input type="text" id="b12"></span>
+                    </div>
+                    <div>
+                        <span><input type="text" id="b21"></span>
+                        <span><input type="text" id="b22"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="submit"><input type="button" value="计算" onclick="show()"><input type="button" value="清除" onclick="clearMat()"></div>
+        </form>
+        <div class="result">
+            <div class="mat3">
+                <div>
+                    <span><input type="text" id="c11"></span>
+                    <span><input type="text" id="c12"></span>
+                </div>
+                <div>
+                    <span><input type="text" id="c21"></span>
+                    <span><input type="text" id="c22"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

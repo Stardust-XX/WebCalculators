@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+.nav{
+    position: fixed;
+    display: flex;
+    background-image: linear-gradient(to left,rgba(204,204,204,0) 0%,rgb(204,204,204) 50%,rgba(204,204,204,0) 100%);
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.background{
+    display: flex;
+    background: url("arc.png")no-repeat;
+    background-size: cover;
+    height: 540px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#time{
+    margin-right: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+.body{
+    display: flex;
+    background-color: white;
+    height: 600px;
+    width: 100%;
+}
+.body .list{
+    display: flex;
+    height: 100%;
+    background-color: rgba(198,189,173,0.3);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 2;
+    border-right-style: solid;
+    border-color: dimgrey;
+    border-width: 1px;
+}
+.body .list span {
+    display: flex;
+    background-color: rgba(138,138,121,0.4);
+    height: 80px;
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 100px -10px rgb(0 0 0 /15%);
+}
+.body .list .page a{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px;
+}
+.body .intro{
+    flex: 5;
+    display: flex;
+    text-align: center;
+    background-image: radial-gradient(circle at 50% 80%, rgba(120,112,104,0.6),rgba(120,112,104,0.2));
+    flex-direction: column;
+    align-items: center;
+}
+.body .intro h2{
+    margin: 20px;
+}
+.body .intro h3{
+    margin: 20px;
+}
+.body .intro p{
+    margin: 30px 150px;
+}
+
