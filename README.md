@@ -1,2 +1,2 @@
 # WebCalculators
-Web前端编程大作业，随便写写
+Web前端大作业，随便写写
